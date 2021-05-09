@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function EventsHomePage() {
+function AllEventsHomePage() {
   const events = [
     { id: "1", name: "FAIQ" },
     { id: "2", name: "SAEQA" },
@@ -13,7 +13,7 @@ function EventsHomePage() {
       <ul>
         {events.map((e) => (
           <li key={e.id}>
-            <Link href={e.id}>{e.nome}</Link>
+            <Link href={`/${e.id}`}>{e.nome}</Link>
           </li>
         ))}
       </ul>
@@ -21,4 +21,4 @@ function EventsHomePage() {
   );
 }
 
-export default EventsHomePage;
+export default AllEventsHomePage;

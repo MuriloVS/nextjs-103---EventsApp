@@ -1,4 +1,4 @@
-function SlugPage() {
+function FilteredEventsPage() {
   return (
     <div>
       <h1>The Slug Page</h1>
@@ -6,4 +6,4 @@ function SlugPage() {
   );
 }
 
-export default SlugPage;
+export default FilteredEventsPage;
